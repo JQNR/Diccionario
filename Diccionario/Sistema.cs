@@ -17,8 +17,8 @@ namespace Diccionario
 
         private void Precarga()
         {
-
-           string path =  AppContext.BaseDirectory+"/diccionario_espanol.txt";
+            string workingDirectory = Environment.CurrentDirectory;
+            string path = Directory.GetParent(workingDirectory).Parent.Parent.FullName+"/diccionario_espanol.txt";
            
             using (StreamReader file = new StreamReader(path))
             {
