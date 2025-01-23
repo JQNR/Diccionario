@@ -18,6 +18,7 @@ namespace Diccionario
         private void Precarga()
         {
             //1 - Obtenemos el archivo txt que contiene todas las palabras con su significado.
+            //1 - Obtenemos el archivo txt que contiene todas las palabras con su significado.
             string workingDirectory = Environment.CurrentDirectory;
             string path = Directory.GetParent(workingDirectory).Parent.Parent.FullName+"/diccionario_espanol.txt";
            
